@@ -1,0 +1,33 @@
+---
+title: "PS2-feedback"
+format: html
+editor: visual
+---
+
+## Problem Set 2 feedback
+
+I'd like that you provided commentary outside of your code chunks. For example, on lines 25 - 35 you use glimpse, summary and str to look at the data, and then describe what you learned about variable types. It would be good to also describe, for example "my dataset has 49 rows and 7 different variables, of which 2 look to be factor, 1 character, and the rest numeric" or something similar.
+
+I personally find `levels()` better for looking at factor variables than `unique()` as it is specific to the levels, but your code works fine as well.
+
+To clarify, on line 85 you describe somethign that you call `fix()` as a function. We have just been using the name fix as our assigned variable - we do not have a function called `fix()`. You could just as easily name the result "apple" or anything else.
+
+After line 110, I'd like to see you use `factor()` to relevel your factor variables after repairing them and then `levels()` to check that it worked.
+
+Also, you don't do any error checking on the numeric varaibles.
+
+Think about how you are using markdown in your .qmd file. If you don't put a space after your hashtags, R will not recognize a header. And your headers would be rather ugly by including all of the text rather than just a short statement of the goal.
+
+For example:
+
+## Next write code that isolates the data for children who are 10 years old or older and who consumed....
+
+looks pretty ugly, whereas:
+
+## Step 3.
+
+Write code that isolates the data for children....
+
+Looks better.
+
+Overall though a good solid job!

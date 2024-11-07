@@ -46,7 +46,7 @@ Halloween$sugar_high <- as.factor(Halloween$sugar_high
 
 ##Fix any errors you see in the dataset:
 
-The original data set provides inconsistencies in data entries, which can cause a problem for plotting appropriate graphs and running various analysis. 
+The original data set provides inconsistencies in data entries, which can cause a problem for plotting appropriate graphs and running various analysis.
 
 Below are some steps I took to make sure that the data is clear, consistent, and R readable:
 
@@ -73,6 +73,7 @@ First, check for all the unique entries to see variations and inconsistencies in
 ```{r}
 unique(Halloween$costume_type) #unique() extracts all the unique values from the 'costume_type' column on the Halloween data set. 
 ```
+
 The results of the unique() function provided us with 8 levels, which are 8 unique values.
 
 Similar code was ran for 'sugar_high' column:
@@ -128,9 +129,9 @@ ggplot(Halloween, aes(x = age, y = min_temp_trick_treat_C, colour = costume_type
 
 ```
 
-##Next write code that isolates the data for children who are 10 years old or older and who consumed 100 or more grams of Halloween candy. Use the resulting data to plot a histogram showing the a count of the number of kids who each ate certain numbers of pieces of candy. 
+##Next write code that isolates the data for children who are 10 years old or older and who consumed 100 or more grams of Halloween candy. Use the resulting data to plot a histogram showing the a count of the number of kids who each ate certain numbers of pieces of candy.
 
-Figure 2 shows count of number of children (age 10 and older and who consumed at least 100 grams of candy) eating different numbers of pieces of candy. 
+Figure 2 shows count of number of children (age 10 and older and who consumed at least 100 grams of candy) eating different numbers of pieces of candy.
 
 ```{r}
 Figure_2 <- Halloween |>
@@ -180,11 +181,8 @@ ggplot(Halloween, aes(x = costume_type, y = g_candy_consumed)) +
 #facet_wrap() divides the data by the selected treatment into two boxplots
 ```
 
-##11. When you have finished, commit all of your changes and open a pull request in the forked repository to indicate proposed changes to the project code. Then push your project to your own GitHub repository. 
-Done!
+##11. When you have finished, commit all of your changes and open a pull request in the forked repository to indicate proposed changes to the project code. Then push your project to your own GitHub repository. Done!
 
-##12. Submit your assignment by pasting the link to your forked GitHub repository on the assignment page on Canvas. 
-Done!
+##12. Submit your assignment by pasting the link to your forked GitHub repository on the assignment page on Canvas. Done!
 
-##13. Contemplate what your Halloween costume will be this year! Scary, or not? And will you get a sugar high?
-Not scary! I am planning to have an interactive costume. I will be a 'green flag' (fully green dressed) and will be holding postit type notes and marker for people to write what they consider a 'green flag' in others and then, I will stick those answers on my green sweatshirt. 
+##13. Contemplate what your Halloween costume will be this year! Scary, or not? And will you get a sugar high? Not scary! I am planning to have an interactive costume. I will be a 'green flag' (fully green dressed) and will be holding postit type notes and marker for people to write what they consider a 'green flag' in others and then, I will stick those answers on my green sweatshirt.
